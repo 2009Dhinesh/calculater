@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            position: absolute;
+            top: 20%;
+            left: 40%;
+            width: 20%;
+            height: 40%;
+            border: 2px solid black;
+            padding: 10px;
+            background-color: red;
+        }
+        #display{
+            width: 95%;
+            height: 30px;
+            color: red;
+            font-size: 20px;
+        }
+        .btn{
+            width: 95%;
+            height: 90%;
+            border: none;
+        }
+        .btn1,.btn2,.btn3,.btn4{
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+        input{
+            width: 60px;
+            height: 40px;
+        }
+        .sum{
+            background-color: rgb(32, 85, 68);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <form name="form">
+        <input type="text" id="display" name="display">
+        <div class="btn">
+            <div class="btn1">
+                <input type="button" value="1" onclick="num1()"></input>
+                <input type="button" value="2" onclick="num2()"></input>
+                <input type="button" value="3" onclick="num3()"></input>
+                <input type="button" value="+" onclick="num4()" class="sum add"></input>
+            </div>
+            <div class="btn2">
+                <input type="button" value="4" onclick="num5()"></input>
+                <input type="button" value="5" onclick="num6()"></input>
+                <input type="button" value="6" onclick="num7()"></input>
+                <input type="button" value="-" onclick="num8()" class="sum sub"></input>
+            </div>
+            <div class="btn3">
+                <input type="button" value="7" onclick="num9()"></input>
+                <input type="button" value="8" onclick="num10()"></input>
+                <input type="button" value="9" onclick="num11()"></input>
+                <input type="button" value="*" onclick="num12()" class="sum mul"></input>
+            </div>
+            <div class="btn4">
+                <input type="button" value="=" onclick="num13()" class="sum equl"></input>
+                <input type="button" value="0" onclick="num14()"></input>
+                <input type="button" value="." onclick="num15()"></input>
+                <input type="button" value="/" onclick="num16() " class="sum div"></input>
+            </div>
+            
+
+            
+
+        </div>
+    </div>
+
+    <script>
+        
+        function num1(){
+            form.display.value += '1';
+            console.log(display);
+        }
+        function num2(){
+            form.display.value += '2';
+            console.log(display);
+        }
+        function num3(){
+            form.display.value += '3';
+            console.log(display);
+        }
+        function num4(){
+            form.display.value += '+';
+            console.log(display);
+        }
+        function num5(){
+            form.display.value += '4';
+            console.log(display);
+        }
+        function num6(){
+            form.display.value += '5';
+            console.log(display);
+        }
+        function num7(){
+            form.display.value += '6';
+            console.log(display);
+        }
+        function num8(){
+            form.display.value += '-';
+            console.log(display);
+        }
+        function num9(){
+            form.display.value += '7';
+            console.log(display);
+        }
+        function num10(){
+            form.display.value += '8';
+            console.log(display);
+        }
+        function num11(){
+            form.display.value += '9';
+            console.log(display);
+        }
+        function num12(){
+            form.display.value += '*';
+            console.log(display);
+        }
+        function num13(){
+            form.display.value = eval(form.display.value);
+            console.log(display);
+        }
+        function num14(){
+            form.display.value += '0';
+            console.log(display);
+        }
+        function num15(){
+            form.display.value += '.';
+            console.log(display);
+        }
+        function num16(){
+            form.display.value += '/';
+            console.log(display);
+        }
+    </script>
+
+
+</body>
+</html>
